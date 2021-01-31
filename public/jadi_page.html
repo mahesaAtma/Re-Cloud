@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5e6345a032.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../asset/first.css">
+    <link rel="stylesheet" type="text/css" href="../asset/red.css">
+    <link rel="stylesheet" type="text/css" href="../asset/blue.css">
+    <link rel="stylesheet" type="text/css" href="../asset/gray.css">
+    <link rel="stylesheet" type="text/css" href="../asset/purple.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <!-- JS Arrow Btn Action Script -->
+    <script src="../asset/js/script.js"></script>
+
+    <title>Electronic Store : Landing Page</title>
+</head>
+
+<body>
+    <!-- UNAVAILABLE ANIMATION -->
+    <div class="wrapper-unavailable">
+        <i class="fas fa-exclamation-circle"></i>
+        <h1><span>Sorry, this product is</span> <br> unavailable/sold!</h1>
+        <div class="icon-x" onclick="close_info()">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- HTML LANDING PAGE SECTION -->
+    <div class="wrapper-landing-all">
+        <video autoplay loop muted id="video_background">
+            <source src="../asset/back_video.mp4" type="video/mp4">
+        </video>
+        <div class="wrap-video" id="wrap-video-bg"></div>
+        <div class="wave-background-top">
+            <img src="../asset/img/samp_0001_backwave-top.png">
+        </div>
+        <div class="wave-background-bot">
+            <img src="../asset/img/samp_0000_back-wave-right.png">
+        </div>
+
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#245a98"
+                d="M44.5,-35.2C59.9,-16.3,75.9,2.3,73.7,18.8C71.5,35.3,51.2,49.7,31.8,54.6C12.4,59.6,-6,55.2,-25,47.7C-43.9,40.2,-63.4,29.5,-68.4,13.8C-73.3,-1.9,-63.9,-22.6,-50.1,-41.1C-36.3,-59.6,-18.1,-75.9,-1.8,-74.5C14.6,-73.1,29.2,-54,44.5,-35.2Z"
+                transform="translate(100 100)" />
+        </svg>
+
+        <div class="row judul justify-content-center align-items-center">
+            <div class="col-4">
+                <h3>Choose</h3>
+                <h3>Your</h3>
+            </div>
+            <div class="col-4">
+                <h1>Best<span>!</span></h1>
+            </div>
+        </div>
+
+        <div class="img-slider" id="img-slider">
+            <div class="img-inside" id="img-inside">
+                <img id="img1" class="img" src="../asset/img/samp_0000_gray_blue_big.png">
+                <img id="img2" class="img" src="../asset/img/samp_0007_red_big.png">
+                <img id="img3" class="img" src="../asset/img/samp_0003_blue_big.png">
+                <img id="img4" class="img" src="../asset/img/samp_0009_purple_big.png">
+                <img id="img5" class="img" src="../asset/img/samp_0004_gray_big.png">
+            </div>
+
+            <div class="arrow-left">
+                <a href="#" id="btn-arrow-left"><img src="../asset/img/samp_0000_arrow_left.png"></a>
+            </div>
+            <div class="arrow-right">
+                <a href="#" id="btn-arrow-right"><img src="../asset/img/samp_0001_arrow_right.png"></a>
+            </div>
+        </div>
+
+        <div class="circle-section">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="icon-section">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+
+        <div class="see-detail">
+            <a href="#" onclick="see_detail()">see detail</a>
+        </div>
+    </div>
+
+    <!-- HTML RED HEADPHONE PAGE SECTION -->
+    <div class="wrapper-red-all">
+        <div class="lamp">
+            <img src="../asset/img/samp_0000_lamp.png">
+        </div>
+
+        <div class="text-detail">
+            <h3>Beast Studio MH8K22M/B</h3>
+            <p>Description<i class="fas fa-arrow-right" id="detail-icon-red"></i></p>
+            <h3>$24,57 USD</h3>
+        </div>
+
+        <div class="wrapper-description">
+            <div class="description-detail-red" id="desc-detail-red">
+                <h4>Product Description</h4>
+                <hr>
+                <ul>
+                    <li>Product Dimension : 5 x 4 x 5 cm</li>
+                    <li>Battery : 1 Lithium ion batteries</li>
+                    <li>Connection Type : Bluetooth</li>
+                    <li>Item Weight : 150 Gram</li>
+                    <li>Manufacturer : Apple Computer</li>
+                    <li>ASIN : B01LY1LR89 </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="middle">
+            <img src="../asset/img/samp_0007_red_big.png">
+        </div>
+
+        <div class="judul">
+            <h1>Beast Studio</h1>
+        </div>
+
+        <div class="another-offer">
+            <p>Another Offers : </p>
+            <div class="list-offer">
+                <div class="first-row">
+                    <div class="item-1" onclick="open_info()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0001_gray_blue_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="red_to_blue()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0002_blue_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="red_to_gray()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0005_gray_small.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="item-2" onclick="red_to_purple()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0008_purple_small.png">
+                        </a>
+                    </div>
+                    <div class="item-2" onclick="open_info()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0001_black2-small.png">
+                        </a>
+                    </div>
+                    <div class="item-2" onclick="back_home_red()">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="circle-section">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- HTML BLUE HEADPHONE PAGE SECTION -->
+    <div class="wrapper-blue-all">
+        <div class="headphone-icon">
+            <img src="../asset/img/samp_0003_blue_big.png">
+        </div>
+
+        <div class="text-detail">
+            <h3>S99 Wireless DJ Stereo <br>Audio Headphone Bluetooth</h3>
+            <p>Description<i class="fas fa-arrow-right" id="detail-icon-blue"></i></p>
+            <h3>$42,73 USD</h3>
+        </div>
+        <div class="wrapper-description">
+            <div class="description-detail-blue" id="desc-detail-blue">
+                <h4>Product Description</h4>
+                <hr>
+                <ul>
+                    <li>Transmission Type : Wireless</li>
+                    <li>Connection Type : USB</li>
+                    <li>Function : Bluetooth</li>
+                    <li>Item Weight : 150 Gram</li>
+                    <li>Communication : Wireless</li>
+                    <li>Item Code : 406506568 </li>
+                </ul>
+            </div>
+        </div>
+        <div class="another-offer">
+            <div class="list-offer">
+                <div class="first-row">
+                    <div class="item-1" onclick="open_info()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0001_gray_blue_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="blue_to_red()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0006_red_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="blue_to_gray()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0005_gray_small.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="item-2" onclick="blue_to_purple()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0008_purple_small.png">
+                        </a>
+                    </div>
+                    <div class="item-2" onclick="open_info()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0001_black2-small.png">
+                        </a>
+                    </div>
+                    <div class="item-2" onclick="back_home_blue()">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML GRAY EARPHONE PAGE SECTION -->
+    <div class="wrapper-gray-all">
+        <div class="person-listening">
+            <img src="../asset/img/people_listening_0000_people_listening.png">
+        </div>
+
+        <div class="wrapper-gray">
+            <div class="furniture-right-top">
+                <div class="box1"></div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+
+            <div class="blue-box"></div>
+
+            <div class="tws-earphone-icon">
+                <img src="../asset/img/samp_0004_gray_big.png">
+            </div>
+
+            <div class="text-detail">
+                <h3>UNICORN F9 TWS</h3>
+                <p>Description<i class="fas fa-arrow-right" id="detail-icon-gray"></i></p>
+                <h3>$5.00 USD</h3>
+            </div>
+
+            <div class="another-offer">
+                <p>Another Offers : </p>
+                <div class="list-offer">
+                    <div class="first-row">
+                        <div class="item-1" onclick="open_info()">
+                            <a href="#">
+                                <img src="../asset/img/samp_0001_gray_blue_small.png">
+                            </a>
+                        </div>
+                        <div class="item-1" onclick="gray_to_blue()">
+                            <a href="#">
+                                <img src="../asset/img/samp_0002_blue_small.png">
+                            </a>
+                        </div>
+                        <div class="item-1" onclick="gray_to_red()">
+                            <a href="#">
+                                <img src="../asset/img/samp_0006_red_small.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="second-row" onclick="gray_to_purple()">
+                        <div class="item-2">
+                            <a href="#">
+                                <img src="../asset/img/samp_0008_purple_small.png">
+                            </a>
+                        </div>
+                        <div class="item-2" onclick="open_info()">
+                            <a href="#">
+                                <img src="../asset/img/samp_0001_black2-small.png">
+                            </a>
+                        </div>
+                        <div class="item-2" onclick="back_home_gray()">
+                            <a href="#">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-description">
+                <div class="description-detail-gray" id="desc-detail-gray">
+                    <h4>Product Description</h4>
+                    <hr>
+                    <ul>
+                        <li>Product Dimension : 5 x 4 x 5 cm</li>
+                        <li>Battery : 1 Lithium ion batteries</li>
+                        <li>Connection Type : Bluetooth</li>
+                        <li>Item Weight : 150 Gram</li>
+                        <li>Manufacturer : Apple Computer</li>
+                        <li>ASIN : B01LY1LR89 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML PURPLE HEADPHONE PAGE SECTION -->
+    <div class="wrapper-purple-all">
+        <div class="wrapper-purple" id="wrapper-purple-click">
+            <div class="hamburger-menu" id="hamburger-click">
+                <div id="hamburger1-change"></div>
+                <div id="hamburger2-change"></div>
+            </div>
+            <div class="text-detail">
+                <h3>S99 Wireless DJ Stereo <br>Audio Headphone Bluetooth</h3>
+                <p><i class="fas fa-arrow-left" id="detail-icon-purple"></i>Description</p>
+                <h3>$42,73 USD</h3>
+            </div>
+            <div class="box-purple-left"></div>
+        </div>
+
+        <div class="tanggal-purple">
+            <p><span></span>26 Januari 2020</p>
+        </div>
+
+        <svg class="wave-bot-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,128L48,106.7C96,85,192,43,288,26.7C384,11,480,21,576,53.3C672,85,768,139,864,160C960,181,1056,171,1152,186.7C1248,203,1344,245,1392,266.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+        <div class="another-offer" id="another-toogle">
+            <d class="list-offer">
+                <div class="first-row">
+                    <div class="item-1" onclick="open_info()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0001_gray_blue_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="purple_to_red()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0006_red_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="purple_to_gray()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0005_gray_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="purple_to_blue()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0002_blue_small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="open_info()">
+                        <a href="#">
+                            <img src="../asset/img/samp_0001_black2-small.png">
+                        </a>
+                    </div>
+                    <div class="item-1" onclick="back_home_purple()">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="wrapper-description">
+            <div class="description-detail-purple" id="desc-detail-purple">
+                <h4>Product Description</h4>
+                <hr>
+                <ul>
+                    <li>Transmission Type : Wireless</li>
+                    <li>Connection Type : USB</li>
+                    <li>Function : Bluetooth</li>
+                    <li>Item Weight : 150 Gram</li>
+                    <li> Communication : Wireless</li>
+                    <li>Item Code : 406506568 </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="headphone-icon-purple">
+            <img src="../asset/img/samp_0009_purple_big.png">
+        </div>
+    </div>
+
+    <div class="icon-headphone">
+        <a><img src="../asset/img/samp_0000_Earphone-Icon.png"></a>
+    </div>
+
+    <!-- VANILLA TILT JS -->
+    <script type="text/javascript" src="../asset/js/vanilla-tilt.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

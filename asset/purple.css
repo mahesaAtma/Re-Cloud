@@ -1,0 +1,586 @@
+.wrapper-purple-all{
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transition: top 0.3s,
+                0.3s height 0.3s, 
+                1s opacity 0.3s  
+                ease-in-out;
+}
+
+/* BACKGROUND GRADIENT PURPLE SECTION */
+.wrapper-purple-all .wrapper-purple{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(143deg, rgba(51,0,204,0.7) 1%, rgba(102,0,102,0.7) 100%);
+    z-index: 3;
+}
+
+.wrapper-purple-all .hamburger-menu{
+    display: none;
+}
+
+/* ANOTHER OFFER SECTION */
+.wrapper-purple-all .another-offer{
+    z-index: 7;
+    transform: translateY(0%);
+    position: absolute;
+    top: 5%;
+    color: white;
+    left: 4%;
+    text-align: center;
+}
+
+.wrapper-purple-all .list-offer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-purple-all .another-offer .first-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-purple-all .another-offer .first-row .item-1{
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    background-color: white;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    -webkit-box-shadow: 3px 4px 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 4px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 3px 4px 2px 1px rgba(0,0,0,0.2);
+}
+
+.wrapper-purple-all .another-offer .first-row .item-1:hover{
+    -webkit-box-shadow: 5px 8px 7px 1px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 8px 7px 1px rgba(0,0,0,0.41);
+    box-shadow: 5px 8px 7px 1px rgba(0,0,0,0.41);
+}
+
+.wrapper-purple-all .another-offer a{
+    display: block;
+    margin: auto;
+}
+.wrapper-purple-all .another-offer img{
+    width: 40px;
+    height: auto;
+}
+
+.wrapper-purple-all .another-offer i{
+    font-size: 30px;
+    color: rgba(0,0,0,0.71);
+}
+
+
+
+/* DESCRIPTION DETAIL SECTION */
+.wrapper-purple-all .wrapper-description{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-purple-all .description-detail-purple{
+    position: relative;
+    left: 5%;
+    overflow: hidden;
+    opacity: 0;
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(143deg, rgba(51,0,204,0.8) 1%, rgba(102,0,102,0.8) 100%);
+    z-index: 7;
+    border-radius: 10px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wrapper-purple-all .des-active-purple{
+    opacity: 1;
+    left: 0%;
+}
+
+.wrapper-purple-all .description-detail-purple::before,
+.wrapper-purple-all .description-detail-purple::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.wrapper-purple-all .description-detail-purple::before{
+    bottom: -5%;
+    right: -5%;
+}
+.wrapper-purple-all .description-detail-purple::after{
+    top: -5%;
+    left: -5%;
+}
+.wrapper-purple-all .description-detail-purple hr{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper-purple-all .description-detail-purple h4{
+    padding: 60px 20px 20px 40px;
+    color: white;
+    font-family: "Exo Medium";
+}
+
+.wrapper-purple-all .description-detail-purple ul{
+    padding: 0 50px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.wrapper-purple-all .description-detail-purple ul li{
+    list-style-type: none;
+    color: white;
+    margin: 14px 0;
+    font-weight: 500;
+}
+
+/* TEXT DETAIL SECTION  */
+.wrapper-purple-all .text-detail{
+    text-align: right;
+    right: 7%;
+    color: white;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 7;
+}
+
+.wrapper-purple-all .text-detail > h3{
+    letter-spacing: 0.2em;
+    font-family: "Exo Black";
+    font-size: 20px;
+}
+
+.wrapper-purple-all .text-detail > p {
+    margin: 30px 0;
+    font-family: "Exo Medium";
+    font-size: 16px;
+    letter-spacing: 0.3em;
+}
+
+.wrapper-purple-all .text-detail p > i{
+    margin-right: 10px;
+    padding: 5px 5px 5px 8px; 
+    border: 2px solid white;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.wrapper-purple-all .text-detail p > i:hover{
+    transform: scale(0.9);
+}
+
+.wrapper-purple-all .box-purple-left{
+    top: 5%;
+    left: -3%;
+    z-index: 9;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: #600051;
+}
+
+/* HEADPHONE ICON SECTION */
+.wrapper-purple-all .headphone-icon-purple{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+}
+.wrapper-purple-all .headphone-icon-purple img{
+    width: 300px;
+    height: auto;
+}
+
+.wrapper-purple-all .tanggal-purple{
+    margin: auto;
+    z-index: 8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 40px;
+    color: white;
+    font-family: "Exo Black";
+    letter-spacing: 0.2em;
+}
+
+.wrapper-purple-all .tanggal-purple p span{
+    margin: 5px 10px;
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: white;
+}
+
+/* WAVE WHITE BOT LEFT SECTION */
+.wrapper-purple-all svg.wave-bot-left{
+    bottom: -3%;
+    width: 50%;
+    position: absolute;
+    z-index: 5;
+}
+
+/* =============================================
+    FOR DEVICE MAX 991,98 PIXEL WIDTH 
+    ============================================*/
+@media (max-width: 991.98px) {  
+    /* DESCRIPTION DETAIL SECTION */
+    .wrapper-purple-all .description-detail-purple{
+        left: 0%;
+        opacity: 0;
+        width: 350px;
+        height: 450px;
+    }
+
+    .wrapper-purple-all .des-active-purple{
+        opacity: 1;
+        left: -8%;
+    }
+
+    .wrapper-purple-all .description-detail-purple::before,
+    .wrapper-purple-all .description-detail-purple::after{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .wrapper-purple-all .description-detail-purple h4{
+        font-size: 20px;
+        padding: 50px 20px 10px 40px;
+    }
+
+    .wrapper-purple-all .description-detail-purple ul{
+        padding: 0 40px;
+        top: 50%;
+    }
+
+    .wrapper-purple-all .description-detail-purple ul li{
+        font-weight: 400;
+    }
+
+    /* TEXT DETAIL SECTION  */
+    .wrapper-purple-all .text-detail{
+        right: 5%;
+        top: 50%;
+    }
+
+    .wrapper-purple-all .text-detail > h3{
+        letter-spacing: 0.2em;
+        font-size: 17px;
+    }
+
+    .wrapper-purple-all .text-detail > p {
+        margin: 20px 0;
+        font-size: 15px;
+        letter-spacing: 0.3em;
+    }
+
+    /* PURPLE BOX SECTION */
+    .wrapper-purple-all .box-purple-left{
+        width: 90px;
+        height: 30px;
+    }
+
+    /* HEADPHONE ICON SECTION */
+    .wrapper-purple-all .headphone-icon-purple{
+        top: 50%;
+        left: 42%;
+    }
+    .wrapper-purple-all .headphone-icon-purple img{
+        width: 300px;
+        height: auto;
+    }
+    
+
+    /* WAVE WHITE BOT LEFT SECTION */
+    .wrapper-purple-all svg.wave-bot-left{
+        left: -10%;
+        bottom: -3%;
+        width: 70%;
+    }
+}
+
+/* =============================================
+    FOR DEVICE MAX 767.98 PIXEL WIDTH 
+    ============================================*/
+@media (max-width: 767.98px) {
+    /* BACKGROUND GRADIENT PURPLE SECTION */
+    .wrapper-purple-all .wrapper-purple{
+        width: 75%;
+    }
+
+    /* DESCRIPTION DETAIL SECTION */
+    .wrapper-purple-all .description-detail-purple{
+        left: 5%;
+        opacity: 0;
+        width: 250px;
+        height: 350px;
+    }
+
+    .wrapper-purple-all .des-active-purple{
+        opacity: 1;
+        top: -10%;
+        left: 13%;
+    }
+
+    .wrapper-purple-all .description-detail-purple::before,
+    .wrapper-purple-all .description-detail-purple::after{
+        width: 60px;
+        height: 60px;
+    }
+
+    .wrapper-purple-all .description-detail-purple hr{
+        width: 70%;
+    }
+
+    .wrapper-purple-all .description-detail-purple h4{
+        font-size: 17px;
+        padding: 30px 20px 5px 40px;
+    }
+
+    .wrapper-purple-all .description-detail-purple ul{
+        padding: 0 40px;
+        top: 50%;
+    }
+
+    .wrapper-purple-all .description-detail-purple ul li{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    /* TEXT DETAIL SECTION  */
+    .wrapper-purple-all .text-detail{
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%,50%);
+        left: 50%;
+        bottom: 15%;
+    }
+
+    .wrapper-purple-all .text-detail > h3{
+        letter-spacing: 0.1em;
+        font-size: 17px;
+    }
+
+    .wrapper-purple-all .text-detail > p {
+        margin: 15px 0;
+        font-size: 14px;
+        letter-spacing: 0.3em;
+    }
+    /* PURPLE BOX SECION */
+    .wrapper-purple-all .box-purple-left{
+        left: -5%;
+        width: 60px;
+        height: 30px;
+    }
+
+    /* HEADPHONE ICON SECTION */
+    .wrapper-purple-all .headphone-icon-purple{
+        left: 63%;
+        top: 40%;
+    }
+    .wrapper-purple-all .headphone-icon-purple img{
+        width: 200px;
+    }
+
+    .wrapper-purple-all .tanggal-purple{
+        font-size: 14px;
+        margin: auto;
+        z-index: 8;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 40px;
+        color: white;
+        letter-spacing: 0.1em;
+    }
+
+    /* WAVE WHITE BOT LEFT SECTION */
+    .wrapper-purple-all svg.wave-bot-left{
+        width: 80%;
+    }
+}
+
+/* =============================================
+    FOR DEVICE MAX 575.98 PIXEL WIDTH 
+    ============================================*/
+@media (max-width: 575.98px) {
+    .wrapper-purple-all{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* BACKGROUND GRADIENT PURPLE SECTION */
+    .wrapper-purple-all .wrapper-purple{
+        position: absolute;
+        right: 0;
+        width: 95%;
+        height: 100vh;
+        background: linear-gradient(143deg, rgba(51,0,204,0.7) 1%, rgba(102,0,102,0.7) 100%);
+        z-index: 3;
+    }
+
+    /* HAMBURGER MENU SECTION */
+    .wrapper-purple-all .hamburger-menu{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 7%;
+    }
+    .wrapper-purple-all .hamburger-menu div {
+        display: block;
+        position: relative;
+        margin-top: 5px;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+    .wrapper-purple-all .hamburger1{
+        right: 7%;
+        transform: rotate(45deg);
+    }
+    .wrapper-purple-all .hamburger2{
+        right: 7%;
+        transform: rotate(-45deg);
+    }
+
+    /* ANOTHER OFFER SECTION */
+    .wrapper-purple-all .another-offer{
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+        width: 50%;
+        background: linear-gradient(175deg, rgba(51,0,204,0.5) 1%, rgba(102,0,102,0.5) 100%);
+        transform: translateY(0%);
+        top: 0%;
+        left: -50%;
+        transition: 0.3s ease-out;
+    }
+
+    /* toogle another offer */
+    .wrapper-purple-all .another-offer-active{
+        left: 0%;
+    }
+    
+    /* DESCRIPTION DETAIL SECTION */
+    .wrapper-purple-all .description-detail-purple{
+        top: -5%;
+        left: 55%;
+        opacity: 0;
+        width: 250px;
+        height: 300px; 
+    }
+
+    .wrapper-purple-all .des-active-purple{
+        opacity: 1;
+        left: 0%;
+    }
+
+    .wrapper-purple-all .description-detail-purple::before,
+    .wrapper-purple-all .description-detail-purple::after{
+        width: 60px;
+        height: 60px;
+    }
+
+    .wrapper-purple-all .description-detail-purple hr{
+        width: 70%;
+    }
+
+    .wrapper-purple-all .description-detail-purple h4{
+        font-size: 15px;
+        padding: 40px 20px 5px 40px;
+    }
+
+    .wrapper-purple-all .description-detail-purple ul{
+        font-size: 13px;
+        padding: 0 40px;
+        top: 60%;
+    }
+
+    .wrapper-purple-all .description-detail-purple ul li{
+        margin: 10px 0;
+        font-weight: 300;
+    }
+
+    /* TEXT DETAIL SECTION  */
+    .wrapper-purple-all .text-detail{
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%,50%);
+        bottom: 20%;
+        left: 50%;
+        z-index: 7;
+    }
+
+    .wrapper-purple-all .text-detail > h3{
+        letter-spacing: 0.2em;
+        font-size: 12px;
+    }
+
+    .wrapper-purple-all .text-detail > p {
+        margin: 10px 0;
+        font-size: 10px;
+        letter-spacing: 0.2em;
+    }
+
+    /* BOX PURPLE SECTION */
+    .wrapper-purple-all .box-purple-left{
+        top: 5%;
+        left: -8%;
+        width: 70px;
+        height: 30px;
+    }
+
+    /* HEADPHONE ICON SECTION */
+    .wrapper-purple-all .headphone-icon-purple{
+        left: 50%;
+        top: 42%;
+    }
+    .wrapper-purple-all .headphone-icon-purple img{
+        width: 150px;
+    }
+
+    /* TANGGAL SECTION */
+    .wrapper-purple-all .tanggal-purple{
+        font-size: 10px;
+        top: 13%;
+        right: 7%;
+        padding: 0px;
+    }
+
+    .wrapper-purple-all .tanggal-purple p span{
+        margin: 5px 10px;
+        width: 50px;
+        height: 1px;
+    }
+
+    /* WAVE WHITE BOT LEFT SECTION */
+    .wrapper-purple-all svg.wave-bot-left{
+        display: none;
+    }
+ 
+}

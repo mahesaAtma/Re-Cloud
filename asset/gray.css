@@ -1,0 +1,550 @@
+.wrapper-gray-all{
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background-color: white;
+    top: -100%;
+    opacity: 0;
+    transition: 0.3s height 0.3s, 
+                0.3s opacity 0.3s,
+                0.6s top 0.3s
+                ease-in-out;
+}
+
+/* FURNITURE */
+.wrapper-gray-all .furniture-right-top{
+    right: 5%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-gray-all .furniture-right-top .box1{
+    margin-top: 0;
+    width: 10px;
+    height: 100px;
+    background-color: #5f5858;
+}
+
+.wrapper-gray-all .furniture-right-top .circle1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5f5858;
+}
+
+.wrapper-gray-all .furniture-right-top .circle2{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #5f5858;
+}
+
+.wrapper-gray-all .furniture-right-top > div{
+    margin: 10px;
+}
+
+/* BLUE BOX SECTION */
+.wrapper-gray-all .blue-box{
+    position: absolute;
+    top: 10%;
+    left: -2%;
+    width: 100px;
+    height: 50px;
+    background-color: #507ea7;
+}
+
+/* TWS EARPHONE IMAGE SECTION */
+.wrapper-gray-all .tws-earphone-icon{
+    position: absolute;
+    right: 10%;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.wrapper-gray-all .tws-earphone-icon img{
+    width: 320px;
+    height: auto;
+}
+
+
+/* PERSON LISTENING SECTION */
+.wrapper-gray-all .person-listening img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 34%;
+    height: auto;
+    z-index: 6;
+}
+
+/* WRAPPER GRAY SECTION */
+.wrapper-gray-all .wrapper-gray{
+    border-radius: 200px 0 0 0 ;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #e3e3e3;
+}
+
+/* TEXT DETAIL SECTION  */
+.wrapper-gray-all .text-detail{
+    left: 10%;
+    color: #5f5858;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 35%;
+}
+
+.wrapper-gray-all .text-detail > h3{
+    letter-spacing: 0.2em;
+    font-family: "Exo Black";
+    font-size: 20px;
+}
+
+.wrapper-gray-all .text-detail > p {
+    margin-top: 20px;
+    font-family: "Exo Medium";
+    font-size: 16px;
+    letter-spacing: 0.3em;
+}
+
+.wrapper-gray-all .text-detail p > i{
+    margin-left: 10px;
+    padding: 5px 5px 5px 8px; 
+    border: 2px solid #5f5858;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.wrapper-gray-all .text-detail p > i:hover{
+    transform: scale(0.9);
+}
+
+/* DESCRIPTION DETAIL SECTION */
+.wrapper-gray-all .wrapper-description{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ 
+.wrapper-gray-all .description-detail-gray{
+    position: relative;
+    left: 8%;
+    overflow: hidden;
+    opacity: 0;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(66, 66, 66, 0.9);
+    z-index: 7;
+    border-radius: 10px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wrapper-gray-all .des-active-gray{
+    opacity: 1;
+    left: 18%;
+}
+
+.wrapper-gray-all .description-detail-gray::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    border-radius: 50%;
+}
+.wrapper-gray-all .description-detail-gray::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    border-radius: 50%;
+}
+
+.wrapper-gray-all .description-detail-gray hr{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper-gray-all .description-detail-gray h4{
+    padding: 60px 20px 20px 40px;
+    color: white;
+    font-family: "Exo Medium";
+}
+
+.wrapper-gray-all .description-detail-gray ul{
+    padding: 0 50px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.wrapper-gray-all .description-detail-gray ul li{
+    list-style-type: none;
+    color: white;
+    margin: 14px 0;
+    font-weight: 500;
+}
+
+/* ANOTHER OFFER SECTION */
+.wrapper-gray-all .another-offer{
+    letter-spacing: 0.2em;
+    font-family: "Exo Black";
+    transform: translateY(-50%);
+    position: absolute;
+    top: 65%;
+    color: #5f5858;
+    left: 9%;
+    text-align: left;
+}
+
+.wrapper-gray-all .list-offer{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-gray-all .another-offer > p{
+    margin-left: 10px;
+}
+
+.wrapper-gray-all .another-offer .first-row,
+.wrapper-gray-all .another-offer .second-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-gray-all .another-offer .first-row .item-1, 
+.wrapper-gray-all .another-offer .second-row .item-2{
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    background-color: white;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    flex-direction: row;
+}
+
+.wrapper-gray-all .another-offer .first-row .item-1:hover, 
+.wrapper-gray-all .another-offer .second-row .item-2:hover{
+    -webkit-box-shadow: 5px 8px 7px 1px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 8px 7px 1px rgba(0,0,0,0.41);
+    box-shadow: 5px 8px 7px 1px rgba(0,0,0,0.41);
+}
+
+.wrapper-gray-all .another-offer a{
+    display: block;
+    margin: auto;
+}
+.wrapper-gray-all .another-offer img{
+    width: 40px;
+    height: auto;
+}   
+
+.wrapper-gray-all .another-offer i{
+    font-size: 30px;
+    color: rgba(0,0,0,0.71);
+}
+
+
+/* =============================================
+    FOR DEVICE MAX 991,98 PIXEL WIDTH 
+    ============================================*/
+@media (max-width: 991.98px) {
+
+    /* TWS EARPHONE IMAGE SECTION */
+    .wrapper-gray-all .tws-earphone-icon{
+        position: absolute;
+        right: 5%;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+
+    .wrapper-gray-all .tws-earphone-icon img{
+        width: 250px;
+        height: auto;
+    }
+
+
+
+    /* TEXT DETAIL SECTION  */
+    .wrapper-gray-all .text-detail{
+        left: 7%;
+    }
+
+    /* DESCRIPTION DETAIL SECTION */    
+    .wrapper-gray-all .description-detail-gray{
+        left: 18%;
+        opacity: 0;
+        width: 320px;
+        height: 420px;}
+
+    .wrapper-gray-all .des-active-gray{
+        opacity: 1;
+        left: 20%;
+    }
+
+    .wrapper-gray-all .description-detail-gray::before,.description-detail-gray::after{
+        width: 70px;
+        height: 70px;
+    }
+
+    .wrapper-gray-all .description-detail-gray h4{
+        font-size: 17px;
+        padding: 40px 20px 10px 40px;
+    }
+
+    .wrapper-gray-all .description-detail-gray ul{
+        padding: 0 40px;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+}
+
+/* =============================================
+    FOR DEVICE MAX 767.98 PIXEL WIDTH 
+    ============================================*/
+@media (max-width: 767.98px) {
+
+    /* BLUE BOX SECTION */
+    .wrapper-gray-all .blue-box{
+        display: none;
+    }
+
+    /* TWS EARPHONE IMAGE SECTION */
+    .wrapper-gray-all .tws-earphone-icon{
+        transform: translate(-50%,-50%);
+        left: 40%;
+        top: 47%;
+    }
+
+    .wrapper-gray-all .tws-earphone-icon img{
+        width: 220px;
+    }
+
+    /* WRAPPER GRAY SECTION */
+    .wrapper-gray-all .wrapper-gray{
+        border-radius: 100px 0 0 0 ;
+    }
+
+    /* TEXT DETAIL SECTION  */
+    .wrapper-gray-all .text-detail{
+        text-align: center;
+        transform: translate(0%,0%);
+        left: 10%;
+        top: 10%;
+    }
+
+    /* DESCRIPTION DETAIL SECTION */
+    .wrapper-gray-all .description-detail-gray{
+        top: -5%;
+        left: -75%;
+        opacity: 0;
+        width: 250px;
+        height: 350px;
+    }
+
+    .wrapper-gray-all .des-active-gray{
+        opacity: 1;
+        left: -15%;
+    }
+
+    .wrapper-gray-all .description-detail-gray::before,
+    .wrapper-gray-all .description-detail-gray::after{
+        width: 50px;
+        height: 50px;
+    }
+
+    .wrapper-gray-all .description-detail-gray hr{
+        width: 70%;
+    }
+
+    .wrapper-gray-all .description-detail-gray h4{
+        font-size: 15px;
+        padding: 40px 20px 10px 40px;
+    }
+
+    .wrapper-gray-all .description-detail-gray ul{
+        font-size: 14px;
+        padding: 0 40px;
+        top: 55%;
+    }
+
+    .wrapper-gray-all .description-detail-gray ul li{
+        margin: 4px 0;
+        font-weight: 300;
+    }
+
+
+    
+    /* ANOTHER OFFER SECTION */
+    .wrapper-gray-all .another-offer p {
+        display: none;
+    }
+    .wrapper-gray-all .another-offer{
+        letter-spacing: 0.2em;
+        transform: translate(0%,0%);
+        position: absolute;
+        top: 65%;
+        color: #5f5858;
+        left: 8%;
+        text-align: left;
+    }
+
+    .wrapper-gray-all .list-offer{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper-gray-all .another-offer .first-row,
+    .wrapper-gray-all .another-offer .second-row{
+        flex-direction: row;
+    }
+
+    .wrapper-gray-all .another-offer .first-row .item-1, 
+    .wrapper-gray-all .another-offer .second-row .item-2{
+        cursor: pointer;
+        display: flex;
+        margin: 5px;
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+        background-color: white;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        flex-direction: row;
+    }
+}
+
+/* =============================================
+    FOR DEVICE MAX 575.98 PIXEL WIDTH 
+    ============================================*/
+@media (max-width: 575.98px) {
+    .wrapper-gray-all {
+        height: 100vh;
+    }
+
+    /* BLUE BOX SECTION */
+    .wrapper-gray-all .blue-box{
+        display: none;
+    }
+
+    /* TWS EARPHONE IMAGE SECTION */
+    .wrapper-gray-all .tws-earphone-icon{
+        transform: translate(-50%,-50%);
+        left: 45%;
+        top: 50%;
+    }
+
+    .wrapper-gray-all .tws-earphone-icon img{
+        width: 200px;
+    }
+
+
+    /* PERSON LISTENING SECTION */
+    .wrapper-gray-all .person-listening img{
+        width: 34%;
+    }
+
+    /* WRAPPER GRAY SECTION */
+    .wrapper-gray-all .wrapper-gray{
+        width: 90%;
+    }
+
+    /* TEXT DETAIL SECTION  */
+    .wrapper-gray-all .text-detail{
+        text-align: center;
+        transform: translate(-50%,0%);
+        top: 10%;
+        left: 40%;
+    }
+
+    .wrapper-gray-all .text-detail > p {
+        margin-top: 10px;
+    }
+
+
+    /* DESCRIPTION DETAIL SECTION */
+    .wrapper-gray-all .description-detail-gray{
+        top: -3%;
+        left: -55%;
+        opacity: 0;
+        width: 250px;
+        height: 350px;
+    }
+
+    .wrapper-gray-all .des-active-gray{
+        opacity: 1;
+        left: -5%;
+    }
+
+    .wrapper-gray-all .description-detail-gray::before,
+    .wrapper-gray-all .description-detail-gray::after{
+        width: 50px;
+        height: 50px;
+    }
+
+    .wrapper-gray-all .description-detail-gray hr{
+        width: 70%;
+    }
+
+    .wrapper-gray-all .description-detail-gray h4{
+        font-size: 15px;
+        padding: 40px 20px 10px 40px;
+    }
+
+    .wrapper-gray-all .description-detail-gray ul{
+        font-size: 14px;
+        padding: 0 40px;
+        top: 55%;
+    }
+
+    .wrapper-gray-all .description-detail-gray ul li{
+        margin: 4px 0;
+        font-weight: 300;
+    }
+
+    /* ANOTHER OFFER SECTION */
+    .wrapper-gray-all .another-offer p {
+        display: none;
+    }
+    .wrapper-gray-all .another-offer{
+        letter-spacing: 0.2em;
+        transform: translate(0%,0%);
+        position: absolute;
+        top: 73%;
+        color: #5f5858;
+        left: 27%;
+        text-align: left;
+    }
+
+    .wrapper-gray-all .list-offer{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper-gray-all .another-offer .first-row,
+    .wrapper-gray-all .another-offer .second-row{
+        flex-direction: row;
+    }
+
+    .wrapper-gray-all .another-offer .first-row .item-1, 
+    .wrapper-gray-all .another-offer .second-row .item-2{
+        display: flex;
+        margin: 5px;
+        width: 70px;
+        height: 70px;
+    }
+}
