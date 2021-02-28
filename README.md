@@ -1,7 +1,7 @@
 # Re-Cloud
 Web app for re-cloud challenge held by CodePolitan and Alibaba Cloud
 
-This is a web application about several types of headset and earphone that available in that store. This website is categorized as a "Landing Page" section
+> This is a web application about several types of headset and earphone that available in that store. This website is categorized as a "Landing Page" section
 
 ### PAGE PREVIEW
 
